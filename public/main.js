@@ -79,7 +79,7 @@ function main() {
     average: average,
   }
 
-  // Adventure Mode
+  // half of Adventure Mode
 
   let sumOfOdd = 0
   for (let index = 0; index < numbers.length; index++) {
@@ -88,14 +88,6 @@ function main() {
     }
   }
 
-  let sumOfEven = 0
-  for (let index = 0; index < numbers.length; index++) {
-    if (numbers[index] % 2 === 0) {
-      sumOfEven += numbers[index]
-    }
-  }
-
   console.log(`The sum of all the odd numbers: ${sumOfOdd}.`)
-  console.log(`The sum of all the even numbers is ${sumOfEven}.`)
 }
 document.addEventListener('DOMContentLoaded', main)
